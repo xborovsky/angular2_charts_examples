@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="jumbotron">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="home">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="bar">Bar chart</a></li>
+        <li routerLinkActive="active"><a routerLink="pie">Pie chart</a></li>
+        <li routerLinkActive="active"><a routerLink="line">Line chart</a></li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
